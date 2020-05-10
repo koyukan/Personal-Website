@@ -1,0 +1,133 @@
+GITHUB
+-Make changes
+-Add changes
+-Commit changes to the repository with a message 
+
+
+pwd : user directory
+ls : list folder
+ls -l:  use a long listing format
+ls -a do not ignore entries starting with .
+ls -la: combination of  l and a
+
+
+man : short for manual gives you the manual for certain commands
+    man ls : gives you the manual for ls
+        man git-log: gives you the git log manual (same as git help log)
+
+
+
+
+which git: where git is located
+git  - - version : tells you the version of git
+Git help : gives you help menu
+Git help log: gives you the manual for the git log
+
+
+
+Git can be configured in 3 levels. System > Global (User) < Project
+    We can use:
+        Git config - - system
+        Git config - - global
+        Git config 
+    To configure Git in respective levels
+
+          Git config - - global  user.name “Lorem Ipsum"
+          Git config - - global user.email “lorem@ipsum.com"
+
+    cd ~: takes you to the user directory
+    cat .gitconfig: opens the config file
+    
+Git config - - global core.editor  “emacs” : edit config file with emacs
+Git config - - global color.ui true : colourful ui
+
+ls -la .git : opens the .git directory (invisible)
+        cat .git/config: opens the config file inside the .git configuration
+        cat .git/HEAD: opens the HEAD file which shows where the HEAD is stored (refs/heads/master)
+        cat .git/refs/heads/master : Shows the SHA-1 value of the head  
+        
+
+GIT ADD/REMOVE/COMMIT
+
+git add . : Adds all changes in that directory to the stage
+git add Kano.html : Adds all changes in the Kano.html file to the stage (you can add a space and add more file names to add multiple files to the stage.)
+git add Koyukan* : Adds all files and directories that start with "Kano"
+
+git commit -m "Message" : Commits everything that is on the stage.
+git commit : Commits without message, text editor opens for the message.
+    Between the Repository and the working directory (the one you modify) you have the staging index
+    When you use the command "add" you add the changes to the staging area. Then you can selectively
+    commit those changes to the repository
+git commit -am "Message" : Adds without the staging.
+    Warning: When you add without staging, you add ALL changes in the tracked files without staging.
+                    Does not include untracked files!!!!
+git commit -a : Adds without staging with multiline messages. Your text editor opens and you need to type the message there.
+
+git rm Kano.html : Removes the file, and automatically adds the removed file change to the staged area, you can just commit the change without adding
+    Alternatively you can remove the file manually and then use the above command to stage the change.
+
+git mv Kano.html Kanosh.html : Renames the file (mv is move). And stages it for you
+    Alternatively you can rename it by UI, then Git sees it as a deleting of the old file and creating a new one.
+        In that case you need to stage those two perceived files by rm the old file and add the new file (they are the same file) then commit
+Note: Renaming and moving are synonymous, you could move the file in a different directory by simply using the mv command
+        It would treat it as a renaming.
+
+
+GIT CHECK STATUS/DIFFERENCES
+
+git status: shows the current status of the git repository
+git diff : shows all the changes made to the file in the working directory against the staging directory. 
+git diff --staged : shows all the changes made in the staged area vs. the repository   
+    @@ -69,7 Something was removed on line 69, showing 7 lines before and after 
+    a -The repository
+    b- the working tree
+        --  removed
+        ++ added
+git diff --color-words : Colors the words that were changed
+
+PAGINATOR   (Used fro browsing gitt diffs)
+Space bar : Changes the page
+B : Backwards
+F : Forwards
+Q : Quit
+-S : Chopping/Wrapping lines
+
+
+GIT LOGS
+
+git log: shows all the commits that you have made so far
+    git log -n 5: Shows the last 5 commit
+    git log --since=2010-01-01 : Shows all the commits since the date
+    git log --until=2010-02-02 : Shows all the commits until the date
+    git log --author="Kaan" : Shows all the commits from the author
+    git log --grep="Lux" : Fetches all the commits that has "Lux" in the commit message section
+    git log --oneline : Gives a one line commit messages.
+
+
+VIEW COMMITS
+git show dfs35desf (SHA value) : shows the commit made with the SHA value.
+git show dfs35desf --color-words : Shows the commit made with changes highligted
+
+COMPARE COMMITS
+git diff dfs35desf..4353fdw45 : compares the two commits
+git diff dfs35desf..4353fdw45 -- color_words : compares the two commits with highlighted differences
+git diff dfs35desf..HEAD : compares the commit against the HEAD
+
+
+
+REVERT CHANGES
+
+git checkout -- Kano.html  : Brings back the original Kano.html from the repository and reverts the changes (Make your working directory match the repository
+git checkout --. : Brings back all the changed files into their original form (form from the repository)
+git checkout 3w4edw3 -- Kano.html : Brings back the Kano.html from that commit.
+git reset HEAD Kano.html :Unstage the file
+
+
+
+MAKING CHANGES TO THE COMMITS
+Not very possible to make changes to the previous commits but you can make changes to the most current one
+git commit --amend -m "Make some more changes" : Takes the stuff from the staging area and adds to most recent commit. SHA value changes most obviously.
+git revert 3242ertew3: reverts commit to a given SHA
+
+REMOVE UNTRACKED FILES
+git clean -f : Deletes all the untracked files, irreversibly  
