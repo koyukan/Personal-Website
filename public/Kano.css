@@ -1,9 +1,17 @@
 
-h1 {color: purple; font-size: 56px;}
-button {border: 2px solid #34495e;background-color: #3498db;color: white;}
+body {
+    
+    font-family: 'Montserrat', sans-serif;
+}
 
-.blessing {
-border: 5px ridge #f00;
+h1 {color: purple; font-size: 56px;}
+button {border: 2px solid black;background-color: red;color: black;}
+
+.blessing { 
+    /* Use dot operator to reach classes */
+color : black;
+width: 50%;
+border: 2px ridge #f00;
 background-color: #ff0;
 padding: .5rem;
 /* display: flex;

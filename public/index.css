@@ -1,0 +1,31 @@
+.Horizontal {
+
+  border-top : 1px solid black ;
+  border-bottom: 1px solid black;
+  text-align: center;
+}
+
+.Vertical {
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+   
+    
+}
+
+.logo {
+    width: 33%;
+    
+}
+
+body {
+    text-align: center;
+    
+
+}
+
+table {
+
+    margin-right: auto;
+    margin-left: auto;
+
+}

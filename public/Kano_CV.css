@@ -1,8 +1,25 @@
 
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-size : 10;
+    font-weight: normal; 
+    /* Weight: how bold. */
+    line-height: normal;
+    /* Line spacing */
+    text-align: left;
+}
+
 h1 { 
-    color: #3A77D6
+    color: #3A77D6;
+    font-size : 2em;
 }
 
 div {
-    color: #666666
+    color: #666666;
 }
+
+#fullname {
+    /* use hashtag to reach ids */
+    color : black;
+}
+
