@@ -18,8 +18,15 @@ div {
     color: #666666;
 }
 
-#fullname {
-    /* use hashtag to reach ids */
-    color : black;
-}
 
+#header {
+    font-family: 'Montserrat', sans-serif;
+    margin-left: 1.6666%;
+    margin-top: 1.6666%;
+    font-size: 40px;
+    font-weight: 600;
+    border-bottom: 3px solid;
+    width: 30%;
+    color: black;
+
+}
