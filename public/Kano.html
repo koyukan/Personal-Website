@@ -6,19 +6,11 @@
   <title>Kano</title>
 
     <link rel="stylesheet" href="kano.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,500;1,100&display=swap" rel="stylesheet"> 
-    <script>
-      document.querySelector("button").addEventListener("click", function(){
-        document.body.style.background = randColor();
-      })
-
-      function randColor(){
-        return '#' + (function co(lor){   return (lor +=
-          [0,1,2,3,4,5,6,7,8,9,'a','b','c','d','e','f'][Math.floor(Math.random()*16)])
-          && (lor.length == 6) ?  lor : co(lor); })('');
-      }
-    </script>
-
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates&family=Montserrat:wght@100&family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="icon" href="media/icons/favicon(1).ico">
+    <link rel="icon" type="image/png" sizes="16x16" href="media/favicon.ico">
+    <!-- Color Scheme: https://colorhunt.co/palette/212984 -->
 </head>
 <body>
 
@@ -34,27 +26,87 @@
   </section>
 
 
-  <div id="header" > Huseyin Kaan Koyukan </div>
 
-
-    
+  <section>
   
-  <p>What is a <strong>blessing?</strong> </p>
-  <!-- <p> is a block level element, each block level element gets its own line  -->
-  <!-- <strong> or <em> is an inline element, does not get its own line  -->
-  <ul>
-    <li>a prayer asking for God's favor and protection.</li>
-      <ul><li><em>"a priest gave a blessing as the site was launched"</em></li></ul>
-    <li>grace said before or after a meal.</li>
-  </ul>
+    <div id="sky">
     
-  <div class="blessing">
-  <h3>Send a blessing!</h3>
-  <img src="https://www.pinclipart.com/picdir/big/69-692906_drake-praying-hands-clipart.png" alt="Praying hands">
-  <p><button>Bless!</button></p>
+      <img id="cloud" src="media/cloud.png" alt="cloud">
+      
+      <div id="header">
+        <h1>I'm Kaan</h1>
+        <h2>a programmer</h2>
+      </div>
+      
+      <img id="cloud2"  src="media/cloud.png" alt="cloud">
+      <img id="sun" src="media/sun2.png" alt="sun">
+      <img id= "bird" class="animals" src="media/bird.png" alt="bird">
+    
   </div>
 
+    <div id="grass">
+      
+      <img id="dino" class="animals" src="media/dino.png" alt="dino">
+      <img id="hippo" class="animals" src="media/hippo.png" alt="hippo">
+
+      <img id="volcano" src="media/volcano.png" alt="volcano">
+      <img id="tree"class = "trees" src="media/tree.png" alt="tree">
+      <img id="tree2"class = "trees" src="media/tree.png" alt="tree2">
+      <img id="tree3" class = "trees"src="media/tree.png" alt="tree3">
+      <img id="tree4"class = "trees" src="media/tree.png" alt="tree4">
+      <img id="tree5"class = "trees"src="media/tree.png" alt="tree5">
+      <img id="tree6"class = "trees" src="media/tree.png" alt="tree6">
+      <img id="tree7"class = "trees" src="media/tree.png" alt="tree7">
+      <img id="tree8"class = "trees" src="media/tree.png" alt="tree8">
+      <img class="animals" id="dino2" src="media/dino2.png" alt="dino2">
+    </div>
+    
+    </section>
+
+    <div><img id="profile" src="media/profile.png" alt="Kaan's profile photo"> </div>
+    <h2>Hello!</h2>
+    <P>I'm an IOS and Web Developer. </P>  
+      
+    <hr>
+
+    <h2>My Skills</h2>
+
+    <div id="tech">
+      <img id="emoji2" src="media/techno.png" alt="technoman">
+      <h3>Design & Development</h3>
+      <p>I can desgin anything really.</p>
+    </div>
+    
+
+    
+    <div id="customer">
+      <img id="emoji1" src="media/bell.png" alt="bell">
+      <h3>Technical Support and Customer Service</h3>
+      <p>People skills, I got it, and many more customer related stuff.</p>
+    </div>
+
+    <hr>
+    
+    <div id="getIn">
+
+    <h2>Get in Touch</h2>
+    <h3>Hey! if you like what you saw and would like to connect, hit me up! </h3>
+    <p>I'm currently accepting freelance work</p>
+    <a href="mailto:kkoyukan@uottawa.ca" class="myButton">Contact me 💋</a>
+    </div>
 
 
+
+    <div id="contactme">
+      
+      <div class="logo" id="linkedin"><a href="https://www.linkedin.com/in/koyukan/"> <img class="logo" src="media/linkedin.svg" alt="linkedin logo"></a></div>
+      <div class="logo" id="github"> <a href="https://github.com/koyukan"><img class="logo" src="media/github.svg" alt="github logo"></a></div>
+      <div class="logo" id="instagram"> <a href="https://www.instagram.com/koyukan/"><img class="logo" src="media/instagram.svg" alt="instagram logo"></a></div>
+      <div class="logo" id="twitter"> <a href="https://twitter.com/Koyukaan"><img class="logo" src="media/twitter.svg" alt="twitter logo"></a></div>
+
+      <p>© 2021 Huseyin Kaan Koyukan </p>
+    </div>
+  
+  
   </body>
 </html>
