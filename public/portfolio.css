@@ -1,0 +1,46 @@
+
+body { 
+    /* padding-top: 56px; */
+    /* text-align: center; */
+    font-family: "Montserrat", sans-serif;
+    background-color: black;
+}
+
+
+h1 {
+    font-family: "Montserrat-Black", sans-serif;
+    font-size: 3rem;
+    line-height: 1.5;
+}
+
+h2 {
+    font-family: "Montserrat", sans-serif;
+}
+
+
+#phone {
+    width: 100%;
+}
+
+
+#container {
+    padding: 5% 3%;
+}
+
+#description {
+    padding: 10% 5% ;
+}
+
+.navbar-brand {
+    font-family: "Montserrat-Black", sans-serif;
+}
+
+.nav-link {
+    font-family: "Montserrat-Light", sans-serif;
+  
+}
+
+.downbutton {
+
+    margin: 5% 3% 5% 0;
+}

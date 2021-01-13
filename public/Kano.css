@@ -1,6 +1,7 @@
 
 body {
     margin: 0px;
+    padding-top: 56px;
     font-family: 'Montserrat Alternates', sans-serif;
     color: #202326 ;
     text-align: center;
@@ -14,6 +15,7 @@ hr {
     border-top: 4px dotted grey;
     border-width: 10px;
     margin: 5% auto;
+    background-color: white;
         
 }
 
@@ -65,6 +67,10 @@ h1 {
      
 }
 
+#profile:hover {
+    width: 35%;
+}
+
 
 #tech {
     margin: 10% auto 20% auto;
@@ -81,7 +87,7 @@ h1 {
 
 .logo {
     width: 5%;
-    margin: 2% 2% 2% 2%;
+    margin: auto 2% auto 2%;
     display: inline;
 }
 
@@ -95,7 +101,9 @@ h1 {
 #contactme {
     position: relative;
     background-color: #4f80e2;
-    height: 250px;
+    height: 200px;
+    padding: 30px;
+    
    
 
 }
@@ -126,7 +134,7 @@ width: 30%;
 	display:inline-block;
 	cursor:pointer;
 	color:#ffffff;
-	font-family:Arial;
+	font-family: 'Montserrat Alternates', sans-serif;
 	font-size: 1rem;
 	font-weight:bold;
 	padding:8px 29px;
@@ -304,4 +312,9 @@ width: 30%;
     width: 90px;
     right: 1%;
     bottom: 10%
+}
+
+
+p {
+    line-height: 2;
 }
