@@ -3,7 +3,7 @@ body {
     /* padding-top: 56px; */
     /* text-align: center; */
     font-family: "Montserrat", sans-serif;
-    background-color: black;
+    
 }
 
 
@@ -24,11 +24,13 @@ h2 {
 
 
 #container {
-    padding: 5% 3%;
+    padding: 2.5% 0%;
+    
 }
 
 #description {
     padding: 10% 5% ;
+    margin-bottom: 20%;
 }
 
 .navbar-brand {
@@ -43,4 +45,20 @@ h2 {
 .downbutton {
 
     margin: 5% 3% 5% 0;
+}
+
+.features {
+    padding: 10% 5% ;
+    text-align: center;
+}
+
+
+.thumbnail:hover {
+    background-color: red;
+    opacity: 0.5;
+    }
+
+
+.fa-7x:hover {
+    color: #BF3433;
 }
