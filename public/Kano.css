@@ -1,320 +1,265 @@
-
 body {
-    margin: 0px;
-    padding-top: 56px;
-    font-family: 'Montserrat Alternates', sans-serif;
-    color: #202326 ;
-    text-align: center;
+  margin: 0px;
+  padding-top: 56px;
+  font-family: "Montserrat Alternates", sans-serif;
+  color: #202326;
+  text-align: center;
 }
-
-
 
 hr {
-    width: 8%;
-    border-style: none;
-    border-top: 4px dotted grey;
-    border-width: 10px;
-    margin: 5% auto;
-    background-color: white;
-        
+  width: 8%;
+  border-style: none;
+  border-top: 4px dotted grey;
+  border-width: 10px;
+  margin: 5% auto;
+  background-color: white;
 }
 
-
-
 #container {
-    
-    width: 96.69%;
-    /* height: 500px; */
-    margin: 0 auto;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-    
+  width: 96.69%;
+  /* height: 500px; */
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
 #container div {
-    width: 200px;
-    height: 30px;
-    /* max-width: 300px; */
-    text-align:center;
-    flex-basis: 600px;
-    border-bottom: 3px solid;
+  width: 200px;
+  height: 30px;
+  /* max-width: 300px; */
+  text-align: center;
+  flex-basis: 600px;
+  border-bottom: 3px solid;
 }
 
 section {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
 }
-
-
 
 h1 {
-    margin-top: 0px;
-    margin-bottom: 0px;
-    font-family: 'Pacifico', cursive;
-    color: #202326 ;
-    font-size: 3.43rem; 
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-family: "Pacifico", cursive;
+  color: #202326;
+  font-size: 3.43rem;
 }
 
-
-
 #profile {
-    margin-top: 5%;
-    width: 30%;
-     
+  margin-top: 5%;
+  width: 30%;
 }
 
 #profile:hover {
-    width: 35%;
+  width: 35%;
 }
 
-
 #tech {
-    margin: 10% auto 20% auto;
-    width: 50%;
-   
-   
+  margin: 10% auto 20% auto;
+  width: 50%;
 }
 
 #customer {
-    margin: 10% auto 20% auto;
-    width: 50%;
-
+  margin: 10% auto 20% auto;
+  width: 50%;
 }
 
 .logo {
-    width: 5%;
-    margin: auto 2% auto 2%;
-    display: inline;
+  width: 5%;
+  margin: auto 2% auto 2%;
+  display: inline;
 }
 
-
-
 #getIn {
-
-    margin: 3%;
+  margin: 3%;
 }
 
 #contactme {
-    position: relative;
-    background-color: #4f80e2;
-    height: 200px;
-    padding: 30px;
-    
-   
-
+  position: relative;
+  background-color: #4f80e2;
+  height: 200px;
+  padding: 30px;
 }
 
-
-
 #emoji1 {
-  
-float: right;
-width: 30%;
-
+  float: right;
+  width: 30%;
 }
 
 #emoji2 {
-  
-float: left;
-width: 30%;
-
+  float: left;
+  width: 30%;
 }
-
 
 .myButton {
-	box-shadow:inset 0px 4px 0px 0px #97c4fe;
-	background:linear-gradient(to bottom, #3d94f6 5%, #1e62d0 100%);
-	background-color:#3d94f6;
-	border-radius:42px;
-	border:6px solid #337fed;
-	display:inline-block;
-	cursor:pointer;
-	color:#ffffff;
-	font-family: 'Montserrat Alternates', sans-serif;
-	font-size: 1rem;
-	font-weight:bold;
-	padding:8px 29px;
-	text-decoration:none;
-	text-shadow:0px 0px 2px #1570cd;
+  box-shadow: inset 0px 4px 0px 0px #97c4fe;
+  background: linear-gradient(to bottom, #3d94f6 5%, #1e62d0 100%);
+  background-color: #3d94f6;
+  border-radius: 42px;
+  border: 6px solid #337fed;
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: "Montserrat Alternates", sans-serif;
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 8px 29px;
+  text-decoration: none;
+  text-shadow: 0px 0px 2px #1570cd;
 }
 .myButton:hover {
-	background:linear-gradient(to bottom, #1e62d0 5%, #3d94f6 100%);
-	background-color:#1e62d0;
+  background: linear-gradient(to bottom, #1e62d0 5%, #3d94f6 100%);
+  background-color: #1e62d0;
 }
 .myButton:active {
-	position:relative;
-	top:1px;
+  position: relative;
+  top: 1px;
 }
 
-
-
-
 #sky {
-    background-color: powderblue;
-    position: relative;
-    height: 300px;   
-    
+  background-color: powderblue;
+  position: relative;
+  height: 300px;
 }
 
 #cloud {
- 
-    position: absolute;
-    right: 15%;
-    bottom: 9%;
-
+  position: absolute;
+  right: 15%;
+  bottom: 9%;
 }
 
 #sun {
-    position: absolute;
-    bottom: 45%;
-    right: 1%;
-
-
+  position: absolute;
+  bottom: 45%;
+  right: 1%;
 }
 
 #cloud2 {
-    position: absolute;
-    left: 15%;
-    bottom: 9%;
-
+  position: absolute;
+  left: 15%;
+  bottom: 9%;
 }
 
 #bird {
-    
-    height: 100x;
-    width: 100px;
-    right: 35%;
-    bottom: 15%;
+  height: 100x;
+  width: 100px;
+  right: 35%;
+  bottom: 15%;
 }
-
-
-
 
 #grass {
-    background-color: #99ee99;
-    position: relative;
-    height: 300px;  
+  background-color: #99ee99;
+  position: relative;
+  height: 300px;
+  z-index: -10;
 }
 
-
-
 #volcano {
-    height: 300px;
-    width: 300px;
-
+  height: 300px;
+  width: 300px;
 }
 
 .trees {
-    position: absolute;
+  position: absolute;
 }
 
 .animals {
-   
-    position: absolute;
+  position: absolute;
 }
 
+#tree9 {
+  /* height: 50px; */
+  width: 100px;
+  left: 10%;
+  bottom: -10%;
+  z-index: -9;
+}
 
 #tree8 {
-    height: 50px;
-    width: 50px;
-    left: 30%;
-    bottom: 60%; 
-
+  height: 50px;
+  width: 50px;
+  left: 30%;
+  bottom: 60%;
 }
-
-
 
 #tree7 {
-    height: 90px;
-    width: 90px;
-    right: 15%;
-    bottom: 20%; 
-
+  height: 90px;
+  width: 90px;
+  right: 15%;
+  bottom: 20%;
+  z-index: -5;
 }
 
-
-
 #tree6 {
-    height: 50px;
-    width: 50px;
-    right: 25%;
-    bottom: 70%; 
-
+  height: 50px;
+  width: 50px;
+  right: 25%;
+  bottom: 70%;
 }
 
 #tree5 {
-    height: 40px;
-    width: 40px;
-    right: 15%;
-    bottom: 80%; 
-
+  height: 40px;
+  width: 40px;
+  right: 15%;
+  bottom: 80%;
 }
 
-
 #tree4 {
-    height: 30px;
-    width: 30px;
-    right: 35%;
-    bottom: 90%; 
-
+  height: 30px;
+  width: 30px;
+  right: 35%;
+  bottom: 90%;
 }
 
 #tree3 {
-
-    height: 40px;
-    width: 40px;
-    left: 25%;
-    bottom: 80%; 
-  
+  height: 40px;
+  width: 40px;
+  left: 25%;
+  bottom: 80%;
 }
 
 #tree2 {
-
-    height: 110px;
-    width: 110px;
-    left: 1%;
-    bottom: 5%; 
-  
+  height: 110px;
+  width: 110px;
+  left: 1%;
+  bottom: 5%;
 }
 
 #tree {
-
-    height: 80px;
-    width: 80px;
-    left: 10%;
-    bottom: 40%
-
+  height: 80px;
+  width: 80px;
+  left: 10%;
+  bottom: 40%;
 }
 
 #dino2 {
-    height: 80px;
-    width: 80px;
-    left: 20%;
-    bottom: 40%
-
+  height: 80px;
+  width: 80px;
+  left: 20%;
+  bottom: 40%;
 }
 
 #hippo {
-
-    height: 60px;
-    width: 60px;
-    right: 11%;
-    bottom: 10%
+  height: 60px;
+  width: 60px;
+  right: 11%;
+  bottom: 10%;
 }
 
 #dino {
-
-    height: 90px;
-    width: 90px;
-    right: 1%;
-    bottom: 10%
+  height: 90px;
+  width: 90px;
+  right: 1%;
+  bottom: 10%;
 }
 
-
 p {
-    line-height: 2;
+  line-height: 2;
+}
+
+#trunk {
+  background-color: white;
 }
