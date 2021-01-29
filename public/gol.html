@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="gol.css" />
+    <title>Game of Life</title>
+  </head>
+
+  <script type="text/javascript" charset="UTF-8" src="gol.js"></script>
+  <body>
+    <h1>Conway's Game of Life</h1>
+
+    <form>
+      <label>Row:</label>
+      <input type="number" id="rowSize" name="rows" />
+      <label>Column:</label>
+      <input type="number" id="columnSize" name="columns" />
+      <input type="checkbox" id="autoSeed" name="autoSeed" />
+      <label> Auto Seed </label><br />
+      <input
+        id="button"
+        type="button"
+        value="Initiate Grid"
+        onclick="tableCreate();"
+      />
+      <input id="button" type="button" value="Render" onclick="render();" />
+    </form>
+    <br />
+
+    <section id="panel"></section>
+    <script type="text/javascript" charset="UTF-8" src="gol.js"></script>
+  </body>
+</html>

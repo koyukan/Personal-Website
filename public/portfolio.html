@@ -5,6 +5,23 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
+    <!-- jQuery, Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+      crossorigin="anonymous"
+    ></script>
+
     <!-- Bootstrap CSS -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
@@ -14,23 +31,7 @@
     />
     <!-- User CSS -->
     <link rel="stylesheet" href="portfolio.css" />
-    <!-- Option 1: Bootstrap Bundle with Popper -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script
-      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
-      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
-      integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
-      crossorigin="anonymous"
-    ></script>
+
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <script
@@ -103,8 +104,8 @@
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                   <li>
-                    <a class="dropdown-item disabled" href="#" tabindex="-1"
-                      >Action</a
+                    <a class="dropdown-item" href="/gol.html" tabindex="-1"
+                      >Game of Life</a
                     >
                   </li>
                   <li><a class="dropdown-item" href="#">Another action</a></li>
@@ -131,9 +132,9 @@
       </nav>
 
       <!-- Intro -->
-      <section class="row text-light intro" style="background-color: black">
+      <section id="intro" class="row text-light section">
         <div id="description" class="col-lg-6 col-sm-12">
-          <h1><span>Welcome to the</span> <span>Spirituality 2.0</span></h1>
+          <h1 id="header">Welcome to the <span>Spirituality 2.0</span></h1>
           <h2>Start collecting and sharing mana today</h2>
           <button type="button" class="btn btn-outline-light btn-lg downbutton">
             <i class="fab fa-apple"></i> Download
@@ -148,37 +149,32 @@
       </section>
 
       <!-- Features -->
-      <section class="row text-dark features">
+      <section id="features" class="row text-dark section">
         <div class="feature col-lg-4 col-md-12">
-          <i class="fas fa-7x fa-project-diagram"></i>
+          <i class="sicon fas fa-5x fa-project-diagram"></i>
           <h2 class="fw-bold my-4">Blockchain Technology</h2>
-          <h3 class="lh-base text-secondary">
+          <h4 class="lh-base text-secondary">
             Sipirituality 2.0 is decentralized through Blockchain technology.
-            There is no single server that could be hacked or blocked by the
-            government
-          </h3>
+          </h4>
         </div>
         <div class="feature col-lg-4 col-md-12">
-          <i class="fab fa-7x fa-creative-commons-nc"></i>
+          <i class="sicon fab fa-5x fa-creative-commons-nc"></i>
           <h2 class="fw-bold my-4">Completely Free</h2>
-          <h3 class="lh-base text-secondary">
-            Our app will always be ad and subscription free. We will never ask
-            you to pay for this service or show you ads.
-          </h3>
+          <h4 class="lh-base text-secondary">
+            Our app will always be ad and subscription free.
+          </h4>
         </div>
         <div class="feature col-lg-4 col-md-12">
-          <i class="fas fa-7x fa-user-secret"></i>
+          <i class="sicon fas fa-5x fa-user-secret"></i>
           <h2 class="fw-bold my-4">Anonymity</h2>
-          <h3 class="lh-base text-secondary">
-            Secularism is your thing? Your'e at the right place, we provide
-            complete anonymity, you can reveal as little as you like about your
-            identitiy.
-          </h3>
+          <h4 class="lh-base text-secondary">
+            We provide complete anonymity, reveal as little as you like.
+          </h4>
         </div>
       </section>
 
       <!-- Spirituality -->
-      <section class="row text-light spirituality">
+      <section id="spirituality" class="row text-light section">
         <!-- Carousel -->
         <div
           id="carouselExampleIndicators"
@@ -257,12 +253,12 @@
       </section>
 
       <!-- Donate -->
-      <section class="text-dark donate">
+      <section id="donate" class="text-dark section">
         <div class="row">
           <div class="col-lg-4 col-md-6">
             <div class="card">
               <div class="card-body">
-                <h5 class="card-title">Bowl of Rice Tear</h5>
+                <h5 class="card-title">Bowl of Rice Tier</h5>
                 <h2>5$</h2>
                 <p class="card-text">
                   Liked what you read? We need your support Do an act of
@@ -309,9 +305,10 @@
           </div>
         </div>
       </section>
+
       <!-- Join -->
-      <section class="text-light join">
-        <h2>Join us today in this amazing quest to find meaning!</h2>
+      <section id="join" class="text-light section">
+        <h1>Join us today in this amazing quest to find meaning!</h1>
         <button type="button" class="btn btn-outline-light btn-lg downbutton">
           <i class="fab fa-apple"></i> Download
         </button>
@@ -319,8 +316,9 @@
           <i class="fab fa-google-play"></i> Download
         </button>
       </section>
+
       <!-- Footer -->
-      <section class="text-dark footer">
+      <section id="footer" class="text-dark section">
         <div>
           <i class="sicon fab fa-linkedin-in fa-3x"></i>
           <i class="sicon fab fa-github fa-3x"></i>

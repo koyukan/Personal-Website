@@ -1,0 +1,23 @@
+form {
+  border: 3px solid black;
+  padding: 5px;
+}
+
+#panel {
+  text-align: center;
+}
+
+table {
+  border: 5px solid black;
+  border-collapse: collapse;
+}
+
+td {
+  border: 1px solid black;
+  width: 15px;
+  height: 15px;
+}
+
+.hover {
+  border: 1px solid red;
+}

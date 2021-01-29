@@ -1,6 +1,5 @@
 body {
   margin: 0px;
-  padding-top: 56px;
   font-family: "Montserrat Alternates", sans-serif;
   color: #202326;
   text-align: center;
@@ -15,23 +14,36 @@ hr {
   background-color: white;
 }
 
-#container {
-  width: 96.69%;
-  /* height: 500px; */
-  margin: 0 auto;
+nav {
+  padding: 0.2% 2%;
+  background-color: #1e2124;
+  font-size: 1.5rem;
+  color: white;
   display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
+  flex: 1;
+  justify-content: space-between;
   align-items: center;
+  /* align-content: start; */
+  position: fixed;
+  width: 96%;
+  z-index: 2;
 }
 
-#container div {
-  width: 200px;
-  height: 30px;
-  /* max-width: 300px; */
-  text-align: center;
-  flex-basis: 600px;
-  border-bottom: 3px solid;
+nav a {
+  text-decoration: none;
+}
+
+a:visited {
+  color: white;
+}
+
+#was {
+  flex: 1;
+  max-width: 50%;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+  align-items: center;
 }
 
 section {
@@ -65,6 +77,11 @@ h1 {
 #customer {
   margin: 10% auto 20% auto;
   width: 50%;
+}
+
+.brand {
+  width: 54px;
+  height: 41px;
 }
 
 .logo {
@@ -120,9 +137,24 @@ h1 {
 }
 
 #sky {
-  background-color: powderblue;
+  padding-top: 6%;
+  background: linear-gradient(90deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
   position: relative;
   height: 300px;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 #cloud {
@@ -262,4 +294,73 @@ p {
 
 #trunk {
   background-color: white;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  font-size: inherit;
+  margin: 0;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 3rem;
+  }
+
+  nav {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #was {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #sky {
+    padding-top: 50%;
+  }
+}
+
+@media (max-width: 576px) {
+  h1 {
+    font-size: 2rem;
+  }
 }

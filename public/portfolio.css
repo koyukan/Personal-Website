@@ -1,19 +1,18 @@
 body {
   font-family: "Montserrat", sans-serif;
+  text-align: center;
 }
 
 #container {
   padding: 0%;
 }
 
-h1 {
+h1,
+h2,
+h3,
+h4 {
   font-family: "Montserrat-Black", sans-serif;
-  font-size: 3rem;
   line-height: 1.5;
-}
-
-h2 {
-  font-family: "Montserrat", sans-serif;
 }
 
 span {
@@ -29,13 +28,22 @@ span {
   font-family: "Montserrat-Light", sans-serif;
 }
 
-/* Intro */
-
-.intro {
-  padding: 10%;
+.section {
+  padding: 7% 15%;
 }
+
+/* Intro */
+#intro {
+  background-color: black;
+}
+
 #description {
   margin: 10% 0% 10% 0%;
+  text-align: left;
+}
+
+#header {
+  font-size: 3rem;
 }
 
 #phone {
@@ -49,31 +57,24 @@ span {
 
 /* Features */
 
-.features {
-  padding: 10% 5%;
-  text-align: center;
+#features {
   background-color: white;
 }
 
 .feature {
-  margin: 5% 0%;
+  margin: 10% 0%;
 }
 
-.thumbnail:hover {
-  background-color: red;
-  opacity: 0.5;
-}
-
-.fa-7x:hover {
-  color: #bf3433;
+.sicon:hover {
+  color: #e2384d;
 }
 
 /* Spirituality */
 
-.spirituality {
-  text-align: center;
+#spirituality {
   font-family: "Montserrat-Black", sans-serif;
   background-color: black;
+  padding: 0%;
 }
 
 #participatory {
@@ -95,24 +96,14 @@ span {
 
 /* Donate */
 
-.donate {
-  padding: 7% 5% 7% 5%;
-  text-align: center;
+#donate {
   background-color: white;
 }
 
 /* Join */
 
-.join {
-  padding: 5%;
-  text-align: center;
+#join {
   background-color: black;
-}
-
-.join h2 {
-  font-family: "Montserrat-Black", sans-serif;
-  font-size: 3rem;
-  line-height: 1.5;
 }
 
 .sicon {
@@ -122,9 +113,7 @@ span {
 
 /* Footer */
 
-.footer {
-  text-align: center;
-  padding: 5%;
+#footer {
   background-color: white;
 }
 
