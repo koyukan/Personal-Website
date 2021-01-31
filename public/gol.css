@@ -21,3 +21,11 @@ td {
 .hover {
   border: 1px solid red;
 }
+
+.alive {
+  background-color: blue;
+}
+
+.dead {
+  background-color: transparent;
+}

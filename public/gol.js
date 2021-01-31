@@ -55,7 +55,7 @@ function tableCreate() {
             } else { parms[1][0] = false;}
             parms[3] = nfinder(parms[0]);
             if (parms[1][gen]) {
-                td.style.backgroundColor = "blue";
+                td.className = "alive";
             }
             cellular[cellId] = parms
             
@@ -101,19 +101,19 @@ function render() {
         if (cellular[i][1][gen]) {
             if (aliveNeighbours < 2) {
                 cellular[i][1].push(false);
-                document.getElementById(i).style.backgroundColor = "transparent";
+                document.getElementById(i).className = "dead";
             } else if (aliveNeighbours < 4) {
                 cellular[i][1].push(true);
             
             } else if (aliveNeighbours > 3) {
                 cellular[i][1].push(false);
-                document.getElementById(i).style.backgroundColor = "transparent";
+                document.getElementById(i).className = "dead";
             
             }
         } else if (!cellular[i][1][gen]) {
             if (aliveNeighbours === 3) {
                 cellular[i][1].push(true);
-                document.getElementById(i).style.backgroundColor = "blue";
+                document.getElementById(i).className = "alive";
             }else {cellular[i][1].push(false);}
         }
     }
@@ -143,10 +143,10 @@ function toggle(cellId) {
 
     if (cellular[cellId][1][gen]) {
         cellular[cellId][1][gen] = false;
-        document.getElementById(cellId).style.backgroundColor = "transparent";
+        document.getElementById(cellId).className = "dead";
     } else if (!cellular[cellId][1][gen]) {
         cellular[cellId][1][gen] = true;
-        document.getElementById(cellId).style.backgroundColor = "blue";
+        document.getElementById(cellId).className = "alive";
     }
     toggleSound.play();
 } 
@@ -156,9 +156,10 @@ function toggle(cellId) {
 function animate(cell) {
     console.log(cell.tagName)
 
-        cell.classList.add("hover")
-        cell.appendChild(document.createTextNode(cell.id));
-    cell.addEventListener("mouseleave", function (event) { cell.classList.remove("hover"); cell.innerHTML="" });
+        // cell.classList.add("hover")
+        // cell.appendChild(document.createTextNode(cell.id));
+        cell.style.backgroundColor = "red";
+        cell.addEventListener("mouseleave", function (event) { cell.style.backgroundColor = ""; });
         // setTimeout(function () {
         //     cell.classList.remove("hover")
         // },10)

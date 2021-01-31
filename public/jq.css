@@ -1,0 +1,19 @@
+.header {
+  font-size: 10rem;
+  color: purple;
+}
+
+.cursive {
+  font-family: cursive;
+}
+
+.border {
+  border: solid black;
+  border-radius: 100%;
+
+  width: 160px;
+}
+
+body {
+  background: linear-gradient(90deg, #8254ea 0%, #e86dec 100%);
+}
